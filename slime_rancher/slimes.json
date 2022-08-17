@@ -1,0 +1,101 @@
+[
+{
+    "id": "mon_blob_honey",
+    "type": "MONSTER",
+    "copy-from": "mon_blob",
+    "hp":10,
+    "name": {
+        "str": "honey slime"
+    },
+    "description": "A yellow blob of viscous honey, consumes plant matter.",
+    "material": [
+        "slime","honey"
+      ],
+    "absorb_material": [ "veggy" ],
+    "extend": { "flags": [ "CANPLAY" ] },
+    "color": "yellow",
+    "special_attacks": [ [ "ABSORB_ITEMS", 150 ], [ "SPLIT", 7200 ] ],
+    "death_drops": {
+        "groups": [
+          
+            "slimerancher_honey"
+           ]
+        },
+    "death_function": {
+        "corpse_type": "NO_CORPSE",
+        "message": "The %s melts away."
+      },
+    "split_move_cost": 1800,
+    "absorb_move_cost_max": 300,
+    "absorb_move_cost_per_ml": 0.025
+  },
+{
+    "id": "mon_blob_steel",
+    "type": "MONSTER",
+    "copy-from": "mon_blob_honey",
+    "name": {
+        "str": "steel slime"
+    },
+    "description": "A gray blob with steel chunks floating in it, consumes stone.",
+    "material": [
+        "slime","steel"
+    ],
+    "special_attacks": [ [ "ABSORB_ITEMS", 150 ], [ "SPLIT", 12000 ] ],
+    "absorb_material": [ "stone" ],
+    "color": "light_gray",
+    "death_drops": {
+                "groups": [
+                    "slimerancher_steel"
+                          ]
+                   }
+},
+
+{
+    "id": "mon_blob_diesel",
+    "type": "MONSTER",
+    "copy-from": "mon_blob_honey",
+    "name": {
+        "str": "diesel slime"
+    },
+    "description": "A green blob, consumes organic matter.",
+    "material": [
+        "slime","steel"
+    ],
+    "absorb_material": [ "veggy","hflesh","iflesh","flesh" ],
+    "special_attacks": [ [ "ABSORB_ITEMS", 150 ], [ "SPLIT", 12000 ] ],
+    "color": "green",
+    "death_drops": {
+                "groups": [
+                    "slimerancher_diesel"
+                          ]
+                   }
+},
+{
+    "id": "mon_blob_hydro",
+    "type": "MONSTER",
+    "copy-from": "mon_blob_honey",
+    "name": {
+        "str": "hydrochloric slime"
+    },
+    "description": "A white blob, consumes organic matter.",
+    "material": [
+        "slime"
+    ],
+    "absorb_material": [ "veggy","hflesh","iflesh","flesh" ],
+    "special_attacks": [ [ "ABSORB_ITEMS", 150 ], [ "SPLIT", 12000 ] ],
+    "color": "white",
+    "death_drops": {
+                "groups": [
+                    "slimerancher_hydro"
+                          ]
+                   },
+  "death_function": {
+    "corpse_type": "NO_CORPSE",
+    "message": "The %s's disolves into acid.",
+    "effect": {
+      "id": "death_acid",
+      "hit_self": true
+    }
+  }
+}
+]
