@@ -1,0 +1,36 @@
+[
+{
+  "id": "slime_bottle",
+  "type": "GENERIC",
+  "category": "container",
+  "name": {
+    "str": "slime ball"
+  },
+  "looks_like": "slime_scrap",
+  "description": "A glistening green ball, there appears to be an airtight pocket inside.",
+  "weight": "450 g",
+  "volume": "450 ml",
+  "longest_side": "276 mm",
+  "price": 0,
+  "price_postapoc": 10,
+  "to_hit": 1,
+  "bashing": 2,
+  "material": [
+    "slime"
+  ],
+  "symbol": ")",
+  "color": "cyan",
+  "pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "watertight": true,
+      "rigid": false,
+      "max_contains_volume": "15000 ml",
+      "max_item_volume": "15000 ml",
+      "max_contains_weight": "20 kg",
+      "moves": 400
+    }
+  ]
+}
+
+]

@@ -1,0 +1,212 @@
+[
+{
+  "type": "recipe",
+  "activity_level": "NO_EXERCISE",
+  "result": "slimerancher_starter_honey",
+  "result_mult": 3,
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_OTHER",
+  "skill_used": "chemistry",
+  "difficulty": 1,
+  "time": "5 m",
+  "batch_time_factors": [
+    50,
+    4
+  ],
+  "autolearn": [
+    [
+      "chemistry",
+      1
+    ]
+  ],
+  "components": [
+    [
+      
+        [ "lotus", 5 ],
+        [ "spurge", 5 ],
+        [ "sunflower", 1],
+        [ "seed_flower", 60],
+        [ "raw_dandelion", 5],
+        [ "chamomile", 5]
+    ],
+    [
+      [
+        "slime_scrap",
+        10
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "NO_EXERCISE",
+  "result": "slimerancher_starter_diesel",
+  "result_mult": 3,
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_OTHER",
+  "skill_used": "chemistry",
+  "difficulty": 3,
+  "time": "5 m",
+  "batch_time_factors": [
+    50,
+    4
+  ],
+  "autolearn": [
+    [
+      "chemistry",
+      4
+    ]
+  ],
+  "components": [
+    [
+      [
+        "edible_tallow_lard",
+        10,
+        "LIST"
+      ],
+      [
+        "tallow_tainted",
+        10
+      ],
+      [
+        "cooking_oil",
+        160
+      ],
+      [
+        "cooking_oil2",
+        160
+      ],
+      [
+        "any_fat",
+        60,
+        "LIST"
+      ],
+      [
+        "molasses",
+        5
+      ],
+      [
+        "wheat",
+        1
+      ],
+      [
+        "barley",
+        1
+      ],
+      [
+        "buckwheat",
+        1
+      ],
+      [
+        "sugar",
+        50
+      ],
+      [
+        "sweet_water",
+        5
+      ],
+      [
+        "sugar_beet",
+        1
+      ]
+    ],
+    [
+      [
+        "slime_scrap",
+        10
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "NO_EXERCISE",
+  "result": "slimerancher_starter_hydro",
+  "result_mult": 3,
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_OTHER",
+  "skill_used": "chemistry",
+  "difficulty": 4,
+  "time": "5 m",
+  "batch_time_factors": [
+    50,
+    4
+  ],
+  "autolearn": [
+    [
+      "chemistry",
+      5
+    ]
+  ],
+  "components": [
+    [
+      [
+        "sweet_water",
+        5
+      ],
+      [
+       "salt_water",
+        5
+      ],
+      [
+       "water",
+        5
+      ]  
+    ],
+    [
+      [
+        "slime_scrap",
+        10
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "NO_EXERCISE",
+  "result": "slimerancher_starter_steel",
+  "result_mult": 3,
+  "category": "CC_CHEM",
+  "subcategory": "CSC_CHEM_OTHER",
+  "skill_used": "chemistry",
+  "difficulty": 2,
+  "time": "5 m",
+  "batch_time_factors": [
+    50,
+    4
+  ],
+  "autolearn": [
+    [
+      "chemistry",
+      3
+    ]
+  ],
+  "components": [
+    [
+      [
+        "rock",
+        20
+      ],
+      [
+        "rock_large",
+        1
+      ],
+      [
+        "flint",
+        20
+      ],
+      [
+        "sharp_rock",
+        20
+      ]],
+    [
+      [
+        "slime_scrap",
+        10
+      ]
+    
+    ]
+  ]
+}
+
+]

@@ -1,0 +1,50 @@
+[{
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slimerancher_honey",
+    "magazine": 100,
+    "items": [
+      { "item": "honey_bottled", "charges":[30,120], "prob": 100,"container-group":"slimerancher_slime_bottle" }
+    ]
+  },
+{
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slimerancher_steel",
+    "container-item": "slime_bottle",
+    "on_overflow": "spill",     
+    "ammo": 50,
+    "magazine": 100,
+    "items": [
+      { "item": "steel_lump", "count": [ 5, 10 ], "prob": 100 }
+    ]
+  },
+{
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slimerancher_slime_bottle",
+    "items": [
+      {"item":"slime_bottle"} 
+    ]
+  },
+{
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slimerancher_diesel",
+    "ammo": 50,
+    "magazine": 100,
+    "items": [
+      {"charges":[3400,12000],"prob": 100,"item":"diesel","container-group":"slimerancher_slime_bottle" }
+    ]
+  },
+{
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slimerancher_hydro",
+    "ammo": 50,
+    "magazine": 100,
+    "items": [
+      {"charges":[15,30],"prob": 100,"item":"chem_muriatic_acid","container-group":"slimerancher_slime_bottle" }
+    ]
+  }
+]

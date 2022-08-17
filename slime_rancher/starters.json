@@ -1,0 +1,166 @@
+[
+{
+  "id": "slimerancher_starter_honey",
+  "type": "COMESTIBLE",
+  "category": "food",
+  "name": {
+    "str": "honey slime starter"
+  },
+  "description": "Bunch of flowers stuffed into a slime glob.  It needs a couple days to adapt to it's new enviroment.",
+  "comestible_type": "FOOD",
+  "weight": "750 g",
+  "volume": "480 ml",
+  "phase":"liquid",
+  "container": "bottle_glass",
+  "price": 10,
+  "price_postapoc": 10,
+  "material": [
+    "veggy","glass"
+  ],
+  "symbol": "%",
+  "color": "white",
+  "flags": [
+    "SOFT"
+  ],
+  "fun": -5,
+  "calories": 192,
+  "brewable" : {
+    "time": 259200, 
+    "results": ["slimerancher_starter_honey_ready"] 
+}
+},
+{
+  "id": "slimerancher_starter_diesel",
+  "type": "COMESTIBLE",
+  "copy-from":"slimerancher_starter_honey",
+  "phase":"liquid",
+  "container": "bottle_glass",
+  "name": {
+    "str": "diesel slime starter"
+  },
+  "description": "Bunch of organic matter stuffed into a slime glob.  It needs a couple days to adapt to it's new enviroment.",
+  "brewable" : {
+    "time": 259200, 
+    "results": ["slimerancher_starter_diesel_ready"] }
+},
+{
+  "id": "slimerancher_starter_steel",
+  "type": "COMESTIBLE",
+  "copy-from":"slimerancher_starter_honey",
+  "phase":"liquid",
+  "container": "bottle_glass",
+  "name": {
+    "str": "steel slime starter"
+  },
+  "description": "Bunch of minerals stuffed into a slime glob.  It needs a couple days to adapt to it's new enviroment.",
+  "brewable" : {
+    "time": 259200, 
+    "results": ["slimerancher_starter_steel_ready"] 
+}},
+{
+  "id": "slimerancher_starter_hydro",
+  "type": "COMESTIBLE",
+  "copy-from":"slimerancher_starter_honey",
+  "phase":"liquid",
+  "container": "bottle_glass",
+  "name": {
+    "str": "hydrochloric slime starter"
+  },
+  "description": "Bunch of organic matter stuffed into a slime glob.  It needs a couple days to adapt to it's new enviroment.",
+  "brewable" : {
+    "time": 259200, 
+    "results": ["slimerancher_starter_hydro_ready"] 
+}},
+{
+  "id": "slimerancher_starter_honey_ready",
+  "type": "COMESTIBLE",
+  "category": "food",
+  "name": {
+    "str": "honey slime mixture"
+  },
+  "description": "A honey slime ready to be deployed.  activate to release the slime.",
+  "comestible_type": "FOOD",
+  "weight": "750 g",
+  "volume": "480 ml",
+  "price": 10,
+  "price_postapoc": 10,
+  "material": [
+    "slime","honey"
+  ],
+  "symbol": "%",
+  "color": "yellow",
+  "flags": [
+    "SOFT"
+  ],
+  "fun": -5,
+  "calories": 192,
+  "use_action": [
+    {
+    "moves": 50,
+    "hostile_msg": "the slime crawls out from your hand.",
+    "difficulty": 9999,
+    "type": "place_monster",
+    "monster_id":"mon_blob_honey"
+    }]
+
+},
+{
+  "id": "slimerancher_starter_diesel_ready",
+  "type": "COMESTIBLE",
+  "copy-from":"slimerancher_starter_honey_ready",
+  "description": "A diesel slime ready to be deployed.  activate to release the slime.",
+  "name": {
+    "str": "diesel slime mixture"
+  },
+  "material": [
+    "slime","diesel"],
+  "color": "green",
+  "use_action": [
+    {
+    "moves": 50,
+    "hostile_msg": "the slime crawls out from your hand.",
+    "difficulty": 9999,
+    "type": "place_monster",
+    "monster_id":"mon_blob_diesel"
+    }]
+},
+{
+  "id": "slimerancher_starter_steel_ready",
+  "type": "COMESTIBLE",
+  "description": "A steel slime ready to be deployed.  activate to release the slime.",
+  "copy-from":"slimerancher_starter_honey_ready",
+  "name": {
+    "str": "steel slime mixture"
+  },
+  "material": [
+    "slime","steel"],
+  "color": "green",
+  "use_action": [
+    {
+    "moves": 50,
+    "hostile_msg": "the slime crawls out from your hand.",
+    "difficulty": 9999,
+    "type": "place_monster",
+    "monster_id":"mon_blob_steel"
+    }]
+},
+{
+  "id": "slimerancher_starter_hydro_ready",
+  "type": "COMESTIBLE",
+  "description": "A hydrochloric slime ready to be deployed.  activate to release the slime.",
+  "copy-from":"slimerancher_starter_honey_ready",
+  "name": {
+    "str": "hydrochloric slime mixture"
+  },
+  "material": [
+    "slime"],
+  "color": "white",
+  "use_action": [
+    {
+    "moves": 50,
+    "hostile_msg": "the slime crawls out from your hand.",
+    "difficulty": 9999,
+    "type": "place_monster",
+    "monster_id":"mon_blob_hydro"
+    }]
+}]
